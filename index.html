@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ContacTodos - Guardar Contacto</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-box">
+        <h1>GUARDAR NUEVO CONTACTO</h1>
+        <p>Llena los siguientes campos para guardar un nuevo contacto</p>
+        <form id="contact-form">
+          <div>
+            <label>Nombre</label>
+            <input type="text" id="nombre" class="input-line" />
+          </div>
+          <div>
+            <label>Apellido</label>
+            <input type="text" id="apellido" class="input-line" />
+          </div>
+          <div>
+            <label>Teléfono</label>
+            <input type="text" id="telefono" class="input-line" />
+          </div>
+          <div>
+            <label>Correo</label>
+            <input type="email" id="correo" class="input-line" />
+          </div>
+          <div>
+            <label>Nota</label>
+            <input type="text" id="nota" class="input-line" />
+          </div>
+          <button type="button" id="guardar-btn">Guardar</button>
+        </form>
+      </div>
+    </div>
+
+    <div id="contact-saved" class="saved-box">
+      <h2>Contacto Guardado</h2>
+      <hr />
+      <p id="saved-info"></p>
+      <hr />
+      <button id="llamar-btn">Llamar</button>
+      <button id="correo-btn">Enviar Correo</button>
+    </div>
+
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
